@@ -1,4 +1,5 @@
 import os
+import time
 from elasticsearch import Elasticsearch
 from typing import Dict, List, Any, Optional
 from datetime import datetime
@@ -12,7 +13,31 @@ class ElasticsearchClient:
             max_retries=3,
             retry_on_timeout=True
         )
-        self.init_indices()
+        # Retry logic for initialization
+        self._init_with_retry()
+    
+    def _init_with_retry(self, max_retries=10, delay=2):
+        """Initialize indices with retry logic"""
+        for attempt in range(max_retries):
+            try:
+                print(f"Attempting to connect to Elasticsearch (attempt {attempt + 1}/{max_retries})")
+                # Test connection first
+                if self.health_check():
+                    print("Elasticsearch is ready, initializing indices...")
+                    self.init_indices()
+                    print("Elasticsearch initialization completed successfully!")
+                    return
+                else:
+                    raise Exception("Health check failed")
+            except Exception as e:
+                print(f"Elasticsearch connection failed (attempt {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    print(f"Retrying in {delay} seconds...")
+                    time.sleep(delay)
+                else:
+                    print("Max retries reached. Elasticsearch initialization failed.")
+                    # Don't raise exception, just log the error
+                    # This allows the app to start even if ES is not available
     
     def health_check(self) -> bool:
         """Check Elasticsearch connectivity"""

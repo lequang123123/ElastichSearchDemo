@@ -1,5 +1,6 @@
 import os
 import json
+import time
 import redis
 from typing import Optional, Any, Dict
 from datetime import datetime
@@ -15,6 +16,27 @@ class RedisClient:
             retry_on_timeout=True,
             health_check_interval=30
         )
+        # Test connection on initialization
+        self._test_connection()
+    
+    def _test_connection(self, max_retries=5, delay=1):
+        """Test Redis connection with retry logic"""
+        for attempt in range(max_retries):
+            try:
+                print(f"Testing Redis connection (attempt {attempt + 1}/{max_retries})")
+                if self.health_check():
+                    print("Redis connection successful!")
+                    return
+                else:
+                    raise Exception("Health check failed")
+            except Exception as e:
+                print(f"Redis connection failed (attempt {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    print(f"Retrying in {delay} seconds...")
+                    time.sleep(delay)
+                else:
+                    print("Max retries reached. Redis connection failed.")
+                    # Don't raise exception, just log the error
     
     def health_check(self) -> bool:
         """Check Redis connectivity"""
