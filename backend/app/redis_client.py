@@ -128,6 +128,41 @@ class RedisClient:
         except Exception as e:
             print(f"Failed to get cache stats: {e}")
             return {}
+    
+    def clear_cache(self) -> bool:
+        """Clear all cache data"""
+        try:
+            self.client.flushdb()
+            return True
+        except Exception as e:
+            print(f"Failed to clear cache: {e}")
+            return False
+    
+    def count_users(self) -> int:
+        """Count cached users"""
+        try:
+            keys = self.client.keys("user:*")
+            return len(keys)
+        except Exception as e:
+            print(f"Failed to count users: {e}")
+            return 0
+    
+    def count_products(self) -> int:
+        """Count cached products"""
+        try:
+            keys = self.client.keys("product:*")
+            return len(keys)
+        except Exception as e:
+            print(f"Failed to count products: {e}")
+            return 0
+    
+    def ping(self) -> bool:
+        """Ping Redis server"""
+        try:
+            return self.client.ping()
+        except Exception as e:
+            print(f"Redis ping failed: {e}")
+            return False
 
 # Global Redis client instance
 redis_client = RedisClient() 

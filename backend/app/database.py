@@ -2,10 +2,10 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import QueuePool
-from .models import Base
+from app.models import Base
 
 # Database configuration
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:password123@localhost:5432/data_integrity_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:password123@postgres:5432/data_integrity_db")
 
 # Create engine with connection pooling
 engine = create_engine(

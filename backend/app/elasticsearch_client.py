@@ -249,6 +249,114 @@ class ElasticsearchClient:
         except Exception as e:
             print(f"Failed to get index stats: {e}")
             return {}
+    
+    def delete_users_index(self) -> bool:
+        """Delete users index"""
+        try:
+            if self.client.indices.exists(index="users"):
+                self.client.indices.delete(index="users")
+            return True
+        except Exception as e:
+            print(f"Failed to delete users index: {e}")
+            return False
+    
+    def delete_products_index(self) -> bool:
+        """Delete products index"""
+        try:
+            if self.client.indices.exists(index="products"):
+                self.client.indices.delete(index="products")
+            return True
+        except Exception as e:
+            print(f"Failed to delete products index: {e}")
+            return False
+    
+    def create_users_index(self) -> bool:
+        """Create users index with mapping"""
+        try:
+            users_mapping = {
+                "mappings": {
+                    "properties": {
+                        "id": {"type": "integer"},
+                        "name": {"type": "text", "analyzer": "standard"},
+                        "email": {"type": "keyword"},
+                        "age": {"type": "integer"},
+                        "city": {"type": "keyword"},
+                        "created_at": {"type": "date"},
+                        "updated_at": {"type": "date"}
+                    }
+                },
+                "settings": {
+                    "number_of_shards": 1,
+                    "number_of_replicas": 0
+                }
+            }
+            self.client.indices.create(index="users", body=users_mapping)
+            return True
+        except Exception as e:
+            print(f"Failed to create users index: {e}")
+            return False
+    
+    def create_products_index(self) -> bool:
+        """Create products index with mapping"""
+        try:
+            products_mapping = {
+                "mappings": {
+                    "properties": {
+                        "id": {"type": "integer"},
+                        "name": {"type": "text", "analyzer": "standard"},
+                        "description": {"type": "text", "analyzer": "standard"},
+                        "price": {"type": "float"},
+                        "category": {"type": "keyword"},
+                        "created_at": {"type": "date"},
+                        "updated_at": {"type": "date"}
+                    }
+                },
+                "settings": {
+                    "number_of_shards": 1,
+                    "number_of_replicas": 0
+                }
+            }
+            self.client.indices.create(index="products", body=products_mapping)
+            return True
+        except Exception as e:
+            print(f"Failed to create products index: {e}")
+            return False
+    
+    def count_users(self) -> int:
+        """Count users in Elasticsearch"""
+        try:
+            response = self.client.count(index="users")
+            return response["count"]
+        except Exception as e:
+            print(f"Failed to count users: {e}")
+            return 0
+    
+    def count_products(self) -> int:
+        """Count products in Elasticsearch"""
+        try:
+            response = self.client.count(index="products")
+            return response["count"]
+        except Exception as e:
+            print(f"Failed to count products: {e}")
+            return 0
+    
+    def get_user(self, user_id: int) -> Optional[Dict[str, Any]]:
+        """Get user by ID from Elasticsearch"""
+        try:
+            response = self.client.get(index="users", id=user_id)
+            return response["_source"]
+        except Exception as e:
+            print(f"Failed to get user {user_id}: {e}")
+            return None
+    
+    def get_cluster_health(self) -> Dict[str, Any]:
+        """Get Elasticsearch cluster health"""
+        try:
+            response = self.client.cluster.health()
+            return response
+        except Exception as e:
+            print(f"Failed to get cluster health: {e}")
+            return {"status": "unknown"}
 
 # Global Elasticsearch client instance
 es_client = ElasticsearchClient() 

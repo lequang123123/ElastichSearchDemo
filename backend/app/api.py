@@ -9,12 +9,16 @@ from .redis_client import redis_client
 from .elasticsearch_client import es_client
 from .sync_service import sync_service
 from .models import User, Product
+from .data_sync_api import router as sync_router
 
 app = FastAPI(
     title="Data Integrity API",
     description="API for managing data with Redis cache and Elasticsearch search",
     version="1.0.0"
 )
+
+# Include sync router
+app.include_router(sync_router)
 
 # Pydantic models for request/response
 class UserCreate(BaseModel):
