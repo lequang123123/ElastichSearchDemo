@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  jmeter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jmeter
+    container_name: jmeter-performance-test
+    volumes:
+      - ./jmeter_test_plan.jmx:/jmeter/jmeter_test_plan.jmx
+      - ./performance_results:/jmeter/results
+    environment:
+      - BASE_URL=http://host.docker.internal:8000
+      - THREAD_COUNT=50
+      - RAMP_UP=10
+      - LOOP_COUNT=10
+    networks:
+      - jmeter-network
+    command: >
+      jmeter -n -t jmeter_test_plan.jmx
+      -l results/jmeter_results.jtl
+      -e -o results/html_report
+      -JTHREAD_COUNT=${THREAD_COUNT}
+      -JRAMP_UP=${RAMP_UP}
+      -JLOOP_COUNT=${LOOP_COUNT}
+      -JBASE_URL=${BASE_URL}
+
+networks:
+  jmeter-network:
+    driver: bridge 

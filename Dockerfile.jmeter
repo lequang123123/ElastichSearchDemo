@@ -1,0 +1,31 @@
+FROM openjdk:11-jre-slim
+
+# Cài đặt JMeter
+ENV JMETER_VERSION=5.6.2
+ENV JMETER_HOME=/opt/apache-jmeter-${JMETER_VERSION}
+ENV PATH=$PATH:$JMETER_HOME/bin
+
+# Cài đặt các dependencies cần thiết
+RUN apt-get update && apt-get install -y \
+    wget \
+    unzip \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Tải và cài đặt JMeter
+RUN wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz \
+    && tar -xzf apache-jmeter-${JMETER_VERSION}.tgz \
+    && mv apache-jmeter-${JMETER_VERSION} /opt/ \
+    && rm apache-jmeter-${JMETER_VERSION}.tgz
+
+# Tạo thư mục làm việc
+WORKDIR /jmeter
+
+# Copy test plan
+COPY jmeter_test_plan.jmx .
+
+# Expose port (nếu cần)
+EXPOSE 1099
+
+# Default command
+CMD ["jmeter", "--version"] 

@@ -1,0 +1,151 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1752238912672,47,Health Check,200,OK,Health Check Test 1-1,text,true,,226,134,1,3,http://host.docker.internal:8000/health,44,0,16
+1752238912672,47,Get User by ID,200,OK,Get User by ID Test 3-1,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,44,0,16
+1752238912672,48,Get All Users,200,OK,Get Users Test 2-1,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,48,0,16
+1752238912722,12,Get All Users,200,OK,Get Users Test 2-1,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,12,0,0
+1752238912721,13,Health Check,200,OK,Health Check Test 1-1,text,true,,226,134,1,3,http://host.docker.internal:8000/health,13,0,0
+1752238912723,11,Get User by ID,200,OK,Get User by ID Test 3-1,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,11,0,0
+1752238912735,5,Health Check,200,OK,Health Check Test 1-1,text,true,,226,134,1,3,http://host.docker.internal:8000/health,5,0,0
+1752238912735,6,Get All Users,200,OK,Get Users Test 2-1,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,6,0,0
+1752238912734,7,Get User by ID,200,OK,Get User by ID Test 3-1,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,7,0,0
+1752238912741,4,Get All Users,200,OK,Get Users Test 2-1,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238912745,1,Get All Users,200,OK,Get Users Test 2-1,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,1,0,0
+1752238912742,42,Get User by ID,200,OK,Get User by ID Test 3-1,text,true,,328,135,1,2,http://host.docker.internal:8000/users/1,42,0,0
+1752238912740,44,Health Check,200,OK,Health Check Test 1-1,text,true,,226,134,1,2,http://host.docker.internal:8000/health,44,0,0
+1752238912785,2,Health Check,200,OK,Health Check Test 1-1,text,true,,226,134,1,2,http://host.docker.internal:8000/health,2,0,0
+1752238912785,3,Get User by ID,200,OK,Get User by ID Test 3-1,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,3,0,0
+1752238912915,7,Health Check,200,OK,Health Check Test 1-2,text,true,,226,134,1,2,http://host.docker.internal:8000/health,7,0,1
+1752238912915,10,Get All Users,200,OK,Get Users Test 2-2,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,10,0,2
+1752238912923,6,Health Check,200,OK,Health Check Test 1-2,text,true,,226,134,1,3,http://host.docker.internal:8000/health,6,0,0
+1752238912926,6,Get All Users,200,OK,Get Users Test 2-2,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,5,0,0
+1752238912926,6,Get User by ID,200,OK,Get User by ID Test 3-2,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,6,0,1
+1752238912929,7,Health Check,200,OK,Health Check Test 1-2,text,true,,226,134,1,3,http://host.docker.internal:8000/health,7,0,0
+1752238912932,6,Get All Users,200,OK,Get Users Test 2-2,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,6,0,0
+1752238912933,6,Get User by ID,200,OK,Get User by ID Test 3-2,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,6,0,0
+1752238912939,3,Get User by ID,200,OK,Get User by ID Test 3-2,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,3,0,0
+1752238912939,4,Get All Users,200,OK,Get Users Test 2-2,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,4,0,0
+1752238912943,3,Get All Users,200,OK,Get Users Test 2-2,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238912936,45,Health Check,200,OK,Health Check Test 1-2,text,true,,226,134,1,2,http://host.docker.internal:8000/health,45,0,0
+1752238912981,4,Health Check,200,OK,Health Check Test 1-2,text,true,,226,134,1,2,http://host.docker.internal:8000/health,4,0,0
+1752238912942,43,Get User by ID,200,OK,Get User by ID Test 3-2,text,true,,328,135,1,2,http://host.docker.internal:8000/users/1,43,0,0
+1752238912985,2,Get User by ID,200,OK,Get User by ID Test 3-2,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,2,0,0
+1752238913218,23,Health Check,200,OK,Health Check Test 1-3,text,true,,226,134,1,3,http://host.docker.internal:8000/health,22,0,13
+1752238913225,20,Get User by ID,200,OK,Get User by ID Test 3-3,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,20,0,6
+1752238913218,32,Get All Users,200,OK,Get Users Test 2-3,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,32,0,13
+1752238913242,16,Health Check,200,OK,Health Check Test 1-3,text,true,,226,134,1,3,http://host.docker.internal:8000/health,15,0,0
+1752238913250,12,Get All Users,200,OK,Get Users Test 2-3,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,12,0,0
+1752238913247,17,Get User by ID,200,OK,Get User by ID Test 3-3,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,17,0,0
+1752238913258,7,Health Check,200,OK,Health Check Test 1-3,text,true,,226,134,1,3,http://host.docker.internal:8000/health,7,0,0
+1752238913262,5,Get All Users,200,OK,Get Users Test 2-3,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,5,0,0
+1752238913268,4,Get All Users,200,OK,Get Users Test 2-3,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,4,0,0
+1752238913264,8,Get User by ID,200,OK,Get User by ID Test 3-3,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,8,0,0
+1752238913272,5,Get All Users,200,OK,Get Users Test 2-3,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,5,0,0
+1752238913265,45,Health Check,200,OK,Health Check Test 1-3,text,true,,226,134,1,2,http://host.docker.internal:8000/health,45,0,0
+1752238913311,3,Health Check,200,OK,Health Check Test 1-3,text,true,,226,134,1,2,http://host.docker.internal:8000/health,3,0,0
+1752238913273,43,Get User by ID,200,OK,Get User by ID Test 3-3,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,43,0,0
+1752238913316,2,Get User by ID,200,OK,Get User by ID Test 3-3,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,2,0,0
+1752238913516,16,Health Check,200,OK,Health Check Test 1-4,text,true,,226,134,1,3,http://host.docker.internal:8000/health,16,0,3
+1752238913516,21,Get All Users,200,OK,Get Users Test 2-4,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,21,0,3
+1752238913533,9,Health Check,200,OK,Health Check Test 1-4,text,true,,226,134,1,3,http://host.docker.internal:8000/health,9,0,0
+1752238913538,8,Get All Users,200,OK,Get Users Test 2-4,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,8,0,0
+1752238913527,20,Get User by ID,200,OK,Get User by ID Test 3-4,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,20,0,4
+1752238913544,7,Health Check,200,OK,Health Check Test 1-4,text,true,,226,134,1,3,http://host.docker.internal:8000/health,7,0,0
+1752238913548,4,Get User by ID,200,OK,Get User by ID Test 3-4,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,4,0,0
+1752238913547,7,Get All Users,200,OK,Get Users Test 2-4,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,7,0,0
+1752238913553,7,Get User by ID,200,OK,Get User by ID Test 3-4,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,7,0,0
+1752238913555,8,Get All Users,200,OK,Get Users Test 2-4,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,8,0,0
+1752238913563,7,Get All Users,200,OK,Get Users Test 2-4,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,7,0,0
+1752238913551,50,Health Check,200,OK,Health Check Test 1-4,text,true,,226,134,1,2,http://host.docker.internal:8000/health,50,0,0
+1752238913560,51,Get User by ID,200,OK,Get User by ID Test 3-4,text,true,,328,135,1,2,http://host.docker.internal:8000/users/1,51,0,0
+1752238913601,10,Health Check,200,OK,Health Check Test 1-4,text,true,,226,134,1,2,http://host.docker.internal:8000/health,10,0,0
+1752238913611,2,Get User by ID,200,OK,Get User by ID Test 3-4,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,2,0,0
+1752238913818,22,Health Check,200,OK,Health Check Test 1-5,text,true,,226,134,1,3,http://host.docker.internal:8000/health,22,0,16
+1752238913832,9,Get User by ID,200,OK,Get User by ID Test 3-5,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,9,0,4
+1752238913827,15,Get All Users,200,OK,Get Users Test 2-5,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,15,0,8
+1752238913840,6,Health Check,200,OK,Health Check Test 1-5,text,true,,226,134,1,3,http://host.docker.internal:8000/health,6,0,0
+1752238913841,6,Get User by ID,200,OK,Get User by ID Test 3-5,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,6,0,0
+1752238913846,4,Health Check,200,OK,Health Check Test 1-5,text,true,,226,134,1,3,http://host.docker.internal:8000/health,4,0,0
+1752238913844,10,Get All Users,200,OK,Get Users Test 2-5,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,10,0,0
+1752238913847,7,Get User by ID,200,OK,Get User by ID Test 3-5,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,7,0,0
+1752238913854,7,Get All Users,200,OK,Get Users Test 2-5,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,7,0,0
+1752238913861,4,Get All Users,200,OK,Get Users Test 2-5,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,4,0,0
+1752238913865,3,Get All Users,200,OK,Get Users Test 2-5,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,2,0,0
+1752238913851,49,Health Check,200,OK,Health Check Test 1-5,text,true,,226,134,1,2,http://host.docker.internal:8000/health,49,0,0
+1752238913854,57,Get User by ID,200,OK,Get User by ID Test 3-5,text,true,,328,135,1,2,http://host.docker.internal:8000/users/1,57,0,0
+1752238913900,17,Health Check,200,OK,Health Check Test 1-5,text,true,,226,134,1,2,http://host.docker.internal:8000/health,16,0,0
+1752238913911,7,Get User by ID,200,OK,Get User by ID Test 3-5,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,7,0,0
+1752238914115,21,Health Check,200,OK,Health Check Test 1-6,text,true,,226,134,1,3,http://host.docker.internal:8000/health,21,0,4
+1752238914123,16,Get User by ID,200,OK,Get User by ID Test 3-6,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,16,0,5
+1752238914123,19,Get All Users,200,OK,Get Users Test 2-6,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,19,0,5
+1752238914137,9,Health Check,200,OK,Health Check Test 1-6,text,true,,226,134,1,3,http://host.docker.internal:8000/health,9,0,0
+1752238914139,9,Get User by ID,200,OK,Get User by ID Test 3-6,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,9,0,0
+1752238914142,9,Get All Users,200,OK,Get Users Test 2-6,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,8,0,0
+1752238914146,8,Health Check,200,OK,Health Check Test 1-6,text,true,,226,134,1,3,http://host.docker.internal:8000/health,8,0,0
+1752238914148,8,Get User by ID,200,OK,Get User by ID Test 3-6,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,8,0,0
+1752238914151,6,Get All Users,200,OK,Get Users Test 2-6,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,6,0,0
+1752238914158,8,Get All Users,200,OK,Get Users Test 2-6,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,7,0,0
+1752238914166,2,Get All Users,200,OK,Get Users Test 2-6,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,2,0,0
+1752238914154,46,Health Check,200,OK,Health Check Test 1-6,text,true,,226,134,1,2,http://host.docker.internal:8000/health,46,0,0
+1752238914200,4,Health Check,200,OK,Health Check Test 1-6,text,true,,226,134,1,2,http://host.docker.internal:8000/health,4,0,0
+1752238914157,49,Get User by ID,200,OK,Get User by ID Test 3-6,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,49,0,0
+1752238914206,2,Get User by ID,200,OK,Get User by ID Test 3-6,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,2,0,0
+1752238914414,17,Health Check,200,OK,Health Check Test 1-7,text,true,,226,134,1,3,http://host.docker.internal:8000/health,17,0,3
+1752238914418,17,Get User by ID,200,OK,Get User by ID Test 3-7,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,17,0,5
+1752238914423,14,Get All Users,200,OK,Get Users Test 2-7,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,14,0,3
+1752238914432,10,Health Check,200,OK,Health Check Test 1-7,text,true,,226,134,1,3,http://host.docker.internal:8000/health,10,0,0
+1752238914435,10,Get User by ID,200,OK,Get User by ID Test 3-7,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,10,0,0
+1752238914438,9,Get All Users,200,OK,Get Users Test 2-7,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,9,0,0
+1752238914443,7,Health Check,200,OK,Health Check Test 1-7,text,true,,226,134,1,3,http://host.docker.internal:8000/health,7,0,0
+1752238914445,7,Get User by ID,200,OK,Get User by ID Test 3-7,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,7,0,0
+1752238914448,8,Get All Users,200,OK,Get Users Test 2-7,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,8,0,0
+1752238914456,3,Get All Users,200,OK,Get Users Test 2-7,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238914459,3,Get All Users,200,OK,Get Users Test 2-7,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238914451,48,Health Check,200,OK,Health Check Test 1-7,text,true,,226,134,1,2,http://host.docker.internal:8000/health,48,0,0
+1752238914453,47,Get User by ID,200,OK,Get User by ID Test 3-7,text,true,,328,135,1,2,http://host.docker.internal:8000/users/1,47,0,0
+1752238914499,5,Health Check,200,OK,Health Check Test 1-7,text,true,,226,134,1,2,http://host.docker.internal:8000/health,5,0,0
+1752238914500,5,Get User by ID,200,OK,Get User by ID Test 3-7,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,5,0,0
+1752238914715,18,Health Check,200,OK,Health Check Test 1-8,text,true,,226,134,1,3,http://host.docker.internal:8000/health,18,0,2
+1752238914722,15,Get All Users,200,OK,Get Users Test 2-8,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,15,0,7
+1752238914720,18,Get User by ID,200,OK,Get User by ID Test 3-8,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,18,0,5
+1752238914734,12,Health Check,200,OK,Health Check Test 1-8,text,true,,226,134,1,3,http://host.docker.internal:8000/health,12,0,0
+1752238914738,12,Get All Users,200,OK,Get Users Test 2-8,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,12,0,0
+1752238914747,5,Health Check,200,OK,Health Check Test 1-8,text,true,,226,134,1,3,http://host.docker.internal:8000/health,5,0,0
+1752238914739,14,Get User by ID,200,OK,Get User by ID Test 3-8,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,14,0,0
+1752238914750,6,Get All Users,200,OK,Get Users Test 2-8,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,6,0,0
+1752238914756,6,Get All Users,200,OK,Get Users Test 2-8,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,6,0,0
+1752238914754,8,Get User by ID,200,OK,Get User by ID Test 3-8,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,8,0,0
+1752238914762,3,Get All Users,200,OK,Get Users Test 2-8,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238914753,46,Health Check,200,OK,Health Check Test 1-8,text,true,,226,134,1,2,http://host.docker.internal:8000/health,46,0,0
+1752238914799,4,Health Check,200,OK,Health Check Test 1-8,text,true,,226,134,1,2,http://host.docker.internal:8000/health,4,0,0
+1752238914762,43,Get User by ID,200,OK,Get User by ID Test 3-8,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,43,0,0
+1752238914806,1,Get User by ID,200,OK,Get User by ID Test 3-8,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,1,0,0
+1752238915012,25,Health Check,200,OK,Health Check Test 1-9,text,true,,226,134,1,3,http://host.docker.internal:8000/health,25,0,7
+1752238915022,17,Get All Users,200,OK,Get Users Test 2-9,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,17,0,6
+1752238915019,21,Get User by ID,200,OK,Get User by ID Test 3-9,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,21,0,3
+1752238915037,8,Health Check,200,OK,Health Check Test 1-9,text,true,,226,134,1,3,http://host.docker.internal:8000/health,8,0,0
+1752238915040,8,Get User by ID,200,OK,Get User by ID Test 3-9,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,8,0,0
+1752238915040,9,Get All Users,200,OK,Get Users Test 2-9,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,9,0,0
+1752238915045,8,Health Check,200,OK,Health Check Test 1-9,text,true,,226,134,1,3,http://host.docker.internal:8000/health,8,0,0
+1752238915048,6,Get User by ID,200,OK,Get User by ID Test 3-9,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,6,0,0
+1752238915051,5,Get All Users,200,OK,Get Users Test 2-9,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,5,0,0
+1752238915057,4,Get All Users,200,OK,Get Users Test 2-9,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,4,0,0
+1752238915061,3,Get All Users,200,OK,Get Users Test 2-9,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238915053,47,Health Check,200,OK,Health Check Test 1-9,text,true,,226,134,1,2,http://host.docker.internal:8000/health,47,0,0
+1752238915055,47,Get User by ID,200,OK,Get User by ID Test 3-9,text,true,,328,135,1,2,http://host.docker.internal:8000/users/1,47,0,0
+1752238915100,4,Health Check,200,OK,Health Check Test 1-9,text,true,,226,134,1,2,http://host.docker.internal:8000/health,4,0,0
+1752238915102,3,Get User by ID,200,OK,Get User by ID Test 3-9,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,3,0,0
+1752238915311,15,Health Check,200,OK,Health Check Test 1-10,text,true,,226,134,1,3,http://host.docker.internal:8000/health,15,0,2
+1752238915327,9,Health Check,200,OK,Health Check Test 1-10,text,true,,226,134,1,3,http://host.docker.internal:8000/health,9,0,0
+1752238915321,20,Get All Users,200,OK,Get Users Test 2-10,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,19,0,10
+1752238915317,26,Get User by ID,200,OK,Get User by ID Test 3-10,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,26,0,13
+1752238915337,9,Health Check,200,OK,Health Check Test 1-10,text,true,,226,134,1,3,http://host.docker.internal:8000/health,9,0,0
+1752238915344,3,Get User by ID,200,OK,Get User by ID Test 3-10,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,3,0,0
+1752238915341,9,Get All Users,200,OK,Get Users Test 2-10,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,9,0,0
+1752238915351,3,Get All Users,200,OK,Get Users Test 2-10,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238915347,10,Get User by ID,200,OK,Get User by ID Test 3-10,text,true,,328,135,1,3,http://host.docker.internal:8000/users/1,10,0,0
+1752238915355,4,Get All Users,200,OK,Get Users Test 2-10,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,4,0,0
+1752238915359,3,Get All Users,200,OK,Get Users Test 2-10,text,true,,2271,133,1,3,http://host.docker.internal:8000/users,3,0,0
+1752238915346,47,Health Check,200,OK,Health Check Test 1-10,text,true,,226,134,1,2,http://host.docker.internal:8000/health,47,0,0
+1752238915393,4,Health Check,200,OK,Health Check Test 1-10,text,true,,226,134,1,2,http://host.docker.internal:8000/health,4,0,0
+1752238915357,44,Get User by ID,200,OK,Get User by ID Test 3-10,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,44,0,0
+1752238915401,4,Get User by ID,200,OK,Get User by ID Test 3-10,text,true,,328,135,1,1,http://host.docker.internal:8000/users/1,4,0,0

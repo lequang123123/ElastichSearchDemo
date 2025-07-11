@@ -1,0 +1,54 @@
+{
+  "test_summary": {
+    "total_requests": 500,
+    "successful_requests": 477,
+    "failed_requests": 23,
+    "success_rate_percent": 95.4,
+    "total_test_time_seconds": 499.0,
+    "throughput_rps": 1.0
+  },
+  "response_time_stats": {
+    "average_ms": 82.22,
+    "minimum_ms": 10,
+    "maximum_ms": 200,
+    "p95_ms": 169,
+    "p99_ms": 194
+  },
+  "endpoint_performance": {
+    "Health Check": {
+      "requests": 106,
+      "success_rate_percent": 96.23,
+      "average_response_time_ms": 29.45,
+      "min_response_time_ms": 10,
+      "max_response_time_ms": 50
+    },
+    "Register User": {
+      "requests": 102,
+      "success_rate_percent": 99.02,
+      "average_response_time_ms": 137.43,
+      "min_response_time_ms": 81,
+      "max_response_time_ms": 200
+    },
+    "Login User": {
+      "requests": 98,
+      "success_rate_percent": 93.88,
+      "average_response_time_ms": 99.31,
+      "min_response_time_ms": 53,
+      "max_response_time_ms": 150
+    },
+    "Search Users": {
+      "requests": 103,
+      "success_rate_percent": 95.15,
+      "average_response_time_ms": 79.43,
+      "min_response_time_ms": 41,
+      "max_response_time_ms": 120
+    },
+    "Get All Users": {
+      "requests": 91,
+      "success_rate_percent": 92.31,
+      "average_response_time_ms": 66.56,
+      "min_response_time_ms": 30,
+      "max_response_time_ms": 100
+    }
+  }
+}
